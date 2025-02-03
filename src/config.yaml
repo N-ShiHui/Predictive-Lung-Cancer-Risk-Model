@@ -1,0 +1,25 @@
+file_path: 'C:\Users\gshbo\Documents\AI Materials\Lung Cancer Analysis\Lung-Cancer-Prediction\data\data_clean.csv'
+target_column: lung_cancer
+val_test_size: 0.2
+val_size: 0.5
+param_grid:
+  classifier__iterations:            [100, 1000]
+  classifier__depth:                 [4, 16]
+  classifier__learning_rate:         [0.01, 0.3]
+  classifier__loss_function:         ['Logloss', 'RMSE']
+  classifier__l2_leaf_reg:           [1, 10]
+cv: 5
+scoring: 'f1'
+numerical_features:
+  - age
+  - weight_change
+  - smoking_duration
+nominal_features:
+  - gender
+  - gene_markers
+ordinal_features:
+  - air_pollution_level
+  - tiredness_frequency
+ordinal_categories:
+  - [Low, Medium, High]
+  - [Low, Medium, High]
