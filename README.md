@@ -15,5 +15,6 @@
 ##### 2) Read the csv file into a dataframe.
 ##### 3) Initialize and run the data preparation class built in data_prep.py which consists of preprocessing steps, data has been cleaned beforehand hence it is not required.
 ##### 4) Initialize the model training class built in model_training.py.
-##### 5) 
-
+##### 5) Split the data according to training(80%), testing(10%) and validation(10%) sets.
+##### 6) Train and evaluate baseline models using XGBoost, Catboost, Random Forest and Decision Tree Classifier algorithms.
+##### 7) 
