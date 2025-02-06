@@ -17,4 +17,7 @@
 ##### 4) Initialize the model training class built in model_training.py.
 ##### 5) Split the data according to training(80%), testing(10%) and validation(10%) sets.
 ##### 6) Train and evaluate baseline models using XGBoost, Catboost, Random Forest and Decision Tree Classifier algorithms.
-##### 7) Need to edit tuned models part, tune top 2 models including catboost and find best performing model.
+##### 7) Train and evaluate top performing baseline model after performing hyperparamter tuning.
+##### 8) Combine all models and their metrics into dictionaries
+##### 9) Find the best model based on F1 score
+##### 10) 
