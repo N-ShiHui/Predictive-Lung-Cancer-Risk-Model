@@ -18,6 +18,19 @@
 ##### 5) Split the data according to training(80%), testing(10%) and validation(10%) sets.
 ##### 6) Train and evaluate baseline models using XGBoost, Catboost, Random Forest and Decision Tree Classifier algorithms.
 ##### 7) Train and evaluate top performing baseline model after performing hyperparamter tuning.
-##### 8) Combine all models and their metrics into dictionaries
-##### 9) Find the best model based on F1 score
-##### 10) 
+##### 8) Combine all models and their metrics into dictionaries.
+##### 9) Find the best model based on F1 and Accuracy scores.
+##### 10) Evaluate the performance of the best model on the test set.
+
+* Key Findings from EDA
+##### 1) Majority of the data features are categorical in nature.
+##### 2) There is a weak correlation between the features and target feature in this dataset.
+##### 3) A change in weight holds the highest correlation with target feature.
+##### 4) Patients with lung cancer history experiences higher increase in weight than weight loss.
+##### 5) Lung cancer occurs more in Females than Males even though there're slightly more Males than Females in this dataset.
+##### 6) Lung cancer occurs more in people with genetic histories in the family line.
+##### 7) Features gender, gene_markers, weight_change, smoking_duration, tiredness_frequency, air_pollution_level and age are highly significant to the target variable upon conducting three-way anova tests.
+
+* Draw up a table featuring how the features were handled in terms of cleaning, processing, feature engineering, selected features used for model training.
+
+
