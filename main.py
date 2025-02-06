@@ -45,16 +45,16 @@ def main():
     )
 
     # Train and evaluate tuned models with hyperparameter tuning
-    tuned_models, tuned_metrics = model_training.train_and_evaluate_tuned_models(
+    tuned_model, tuned_metrics = model_training.train_and_evaluate_tuned_models(
         X_train, y_train, X_val, y_val
     )
 
     # Combine all models and their metrics into dictionaries
-    all_models = {**baseline_models, **tuned_models}
+    all_models = {**baseline_models, **tuned_model}
     all_metrics = {**baseline_metrics, **tuned_metrics}
 
     # Find the best model based on F1 score
-    best_model_name = max(all_metrics, key=lambda k: all_metrics[k]["F1"])
+    best_model_name = max(all_metrics, key=lambda k: sum(all_metrics[k][m] for m in ["F1", "Accuracy"]))
     best_model = all_models[best_model_name]
     logging.info(f"Best Model Found: {best_model_name}")
 
