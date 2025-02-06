@@ -130,7 +130,7 @@ class ModelTraining:
         Tuple[Dict[str, Pipeline], Dict[str, Dict[str, float]]]: A tuple containing the tuned pipelines and their evaluation metrics.
         """
         logging.info("Starting hyperparameter tuning.")
-        tuned_models = {}
+        tuned_model = {}
         tuned_metrics = {}
         param_grid = self.config["param_grid"]
         cv = self.config["cv"]
