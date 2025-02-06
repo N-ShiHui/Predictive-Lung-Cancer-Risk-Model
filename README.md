@@ -29,8 +29,36 @@
 ##### 4) Patients with lung cancer history experiences higher increase in weight than weight loss.
 ##### 5) Lung cancer occurs more in Females than Males even though there're slightly more Males than Females in this dataset.
 ##### 6) Lung cancer occurs more in people with genetic histories in the family line.
-##### 7) Features gender, gene_markers, weight_change, smoking_duration, tiredness_frequency, air_pollution_level and age are highly significant to the target variable upon conducting three-way anova tests.
+##### 7) Dataset consists a higher ratio of elderly patients starting from age 60.
+##### 8) Features gender, gene_markers, weight_change, smoking_duration, tiredness_frequency, air_pollution_level and age are highly significant to the target variable upon conducting three-way anova tests.
 
-* Draw up a table featuring how the features were handled in terms of cleaning, processing, feature engineering, selected features used for model training.
+* Feature handling description
+#
+|         Feature        |                           Data handling Description                             | 
+|------------------------|---------------------------------------------------------------------------------|
+| All                    | Column labels are renamed to lower-caps for easier access and readability.      |
+| Categorical            | Values are standardized with mapping to replace non-standardized data.          |
+| COPD History           | Missing values replaced with 'No'.                                              |
+| Taken Bronchodilators  | Missing values replaced with 'No'.                                              |
+| Air Pollution Exposure | Missing values replaced with 'Low'.                                             |
+| Lung Cancer Occurrence | Data type changed to 'object'.                                                  |
+| Start Smoking          | Data type changed to 'int', dropped after feature engineering.                  |
+| Stop Smoking           | Data type changed to 'int', dropped after feature engineering.                  |
+| Gender                 | Value 'NAN' replaced with nonetype data and dropped.                            |
+| ID                     | Deemed as irrelevant and dropped.                                               |
+| Age                    | Absolute function applied to remove all negative values.                        |
+| weight_change          | Feature engineered with features 'Last Weight' and 'Current Weight'.            |
+| smoking_duration       | Feature engineered with features 'Stop Smoking' and 'Start Smoking'.            |
+| Last Weight            | Dropped after feature engineering.                                              |
+| Current Weight         | Dropped after feature engineering                                               |
+##### Below are some code snippets of the data cleaning process
+![image](https://github.com/user-attachments/assets/58d54185-5d12-4127-a401-441432aa5244)
+![image](https://github.com/user-attachments/assets/95cc9215-38bb-4b0a-acc2-a92bbeea99fa)
 
+* Model selection
+|                  Model                 |                       Model description                       |                   Reason for selecting model                    |
+| Decision Tree Classifier               | Tree-like structure, root node consists of entire dataset.    | 
+| Categorical Boosting Classifier        |
+| Extreme Gradient Boosting Classifier   |
+| Random Forest Classifier               |
 
