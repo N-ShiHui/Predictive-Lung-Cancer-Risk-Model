@@ -56,10 +56,11 @@
 ![image](https://github.com/user-attachments/assets/95cc9215-38bb-4b0a-acc2-a92bbeea99fa)
 
 * Model selection
+#
 |                  Model                  |                    Baseline Model description                       |                   Reason for selecting model                    |
 |-----------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------|
 | Decision Tree Classifier                | Tree-like structure, root node consists of entire dataset.          | Easy to interpret, handles numerical and categorical data.      |
-| Categorical Gradient Boosting Classifier| 
-| Extreme Gradient Boosting Classifier    |
-| Random Forest Classifier                |
-
+| Categorical Boosting Classifier         | Designed specifically to handle categorical features, ensemble of   | Datasets consists of categorical features majorly, robust to    |
+|                                         | trees using boosting method.                                        | noisy data.                                                     |
+| Extreme Gradient Boosting Classifier    | Optimized for speed and performance, ensemble of trees as above.    | Performs well with large datasets and highly customizable.      |
+| Random Forest Classifier                | Ensemble of trees using bagging method, bootstrap sampling.         | Prevents overfitting, handles large datasets, reduces variance. |
