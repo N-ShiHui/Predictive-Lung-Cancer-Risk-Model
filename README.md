@@ -65,6 +65,22 @@
 | Extreme Gradient Boosting Classifier    | Optimized for speed and performance, ensemble of trees as above.    | Performs well with large datasets and highly customizable.      |
 | Random Forest Classifier                | Ensemble of trees using bagging method, bootstrap sampling.         | Prevents overfitting, handles large datasets, reduces variance. |
 
-* Baseline model evaluation
+* Baseline model evaluation on validation set
 #
-|             Model                 |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
+|       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
+|-----------------------------------|----------------|-----------------|----------------|------------------|--------------------|
+| Decision Tree                     | 0.666307       | 0.695564        | 0.684523       | 0.69             | 0.666162           |
+| Catboost                          | 0.735199       | 0.726315        | 0.821428       | 0.770949         | 0.842936           |
+| XGBoost                           | 0.727664       | 0.733705        | 0.781746       | 0.756964         | 0.833888           |
+| Random Forest                     | 0.730893       | 0.739622        | 0.777777       | 0.758220         | 0.823842           |
+##### Top performing baseline model: Catboost(Categorical Boosting Classifier)
+* Tuned model evaluation on validation set
+#
+|       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
+|-----------------------------------|----------------|-----------------|----------------|------------------|--------------------|
+| Catboost                          | 0.710441       | 0.663877        | 0.944444       | 0.779688         | 0.821304           |
+* Final evaluation on test set for catboost model
+#
+|       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
+|-----------------------------------|----------------|-----------------|----------------|------------------|--------------------|
+| Catboost                          | 0.736275       | 0.711956        | 0.820459       | 0.762366         | 0.841067           |
