@@ -56,9 +56,10 @@
 ![image](https://github.com/user-attachments/assets/95cc9215-38bb-4b0a-acc2-a92bbeea99fa)
 
 * Model selection
-|                  Model                 |                       Model description                       |                   Reason for selecting model                    |
-| Decision Tree Classifier               | Tree-like structure, root node consists of entire dataset.    | 
-| Categorical Boosting Classifier        |
-| Extreme Gradient Boosting Classifier   |
-| Random Forest Classifier               |
+|                  Model                  |                    Baseline Model description                       |                   Reason for selecting model                    |
+|-----------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------|
+| Decision Tree Classifier                | Tree-like structure, root node consists of entire dataset.          | Easy to interpret, handles numerical and categorical data.      |
+| Categorical Gradient Boosting Classifier| 
+| Extreme Gradient Boosting Classifier    |
+| Random Forest Classifier                |
 
