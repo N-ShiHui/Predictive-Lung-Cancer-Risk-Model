@@ -64,3 +64,7 @@
 |                                         | trees using boosting method.                                        | noisy data.                                                     |
 | Extreme Gradient Boosting Classifier    | Optimized for speed and performance, ensemble of trees as above.    | Performs well with large datasets and highly customizable.      |
 | Random Forest Classifier                | Ensemble of trees using bagging method, bootstrap sampling.         | Prevents overfitting, handles large datasets, reduces variance. |
+
+* Baseline model evaluation
+#
+|             Model                 |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
