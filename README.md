@@ -84,3 +84,4 @@
 |       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
 |-----------------------------------|----------------|-----------------|----------------|------------------|--------------------|
 | Catboost                          | 0.736275       | 0.711956        | 0.820459       | 0.762366         | 0.841067           |
+##### Final results for Catboost model is (to be continued after reaching home.)
