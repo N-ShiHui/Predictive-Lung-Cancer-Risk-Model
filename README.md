@@ -73,7 +73,7 @@
 | Catboost                          | 0.735199       | 0.726315        | 0.821428       | 0.770949         | 0.842936           |
 | XGBoost                           | 0.727664       | 0.733705        | 0.781746       | 0.756964         | 0.833888           |
 | Random Forest                     | 0.730893       | 0.739622        | 0.777777       | 0.758220         | 0.823842           |
-##### Top performing baseline model: Catboost(Categorical Boosting Classifier)
+##### Top performing baseline model: Catboost(Categorical Boosting Classifier) is chosen based on F1 and Accuracy scores.
 * Tuned model evaluation on validation set
 #
 |       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
@@ -84,4 +84,12 @@
 |       Model (Classifier)          |    Accuracy    |    Precision    |     Recall     |        F1        |       ROC AUC      |
 |-----------------------------------|----------------|-----------------|----------------|------------------|--------------------|
 | Catboost                          | 0.736275       | 0.711956        | 0.820459       | 0.762366         | 0.841067           |
-##### Final results for Catboost model is (to be continued after reaching home.)
+##### Final results for Catboost model's performance on test set is within desired expectations, hence model will be deployed.
+
+* Additional considerations before deployment
+#
+* Changes in data distribution over time which might degrade model performance.
+* Sufficiency of computational resources.
+* Predictive speed of model in real-time applications.
+* Deployment environment.
+* User experience and business alignment.
