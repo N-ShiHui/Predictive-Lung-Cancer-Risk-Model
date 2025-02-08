@@ -86,10 +86,10 @@
 | Catboost                          | 0.736275       | 0.711956        | 0.820459       | 0.762366         | 0.841067           |
 ##### Final results for Catboost model's performance on test set is within desired expectations, hence model will be deployed.
 
-* Additional considerations before deployment
+* Additional considerations to take before deployment:
 #
-* Changes in data distribution over time which might degrade model performance.
-* Sufficiency of computational resources.
-* Predictive speed of model in real-time applications.
-* Deployment environment.
-* User experience and business alignment.
+##### 1) Changes in data distribution over time which might degrade model performance.
+##### 2) Sufficiency of computational resources.
+##### 3) Predictive speed of model in real-time applications.
+##### 4) Deployment environment.
+##### 5) User experience and business alignment.
