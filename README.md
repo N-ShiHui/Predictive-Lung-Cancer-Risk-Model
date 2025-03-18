@@ -1,5 +1,6 @@
-# Lung Cancer Prediction with machine learning model.
+# Lung Cancer Risk Prediction with machine learning model.
 ### This project focuses on analysing the possibility of lung cancer occurrence based on data obtained from a reliable source. Features which holds a higher correlation to the occurrence of lung cancer will be used to build the predictive model. The model will be used to assess if a person is at high risk for lung cancer.
+#### Side Note: This is a mini project used to serve as a prototype for various machine learning models and should not be used to fully define the risks of lung cancer.
 
 * Prerequisites:
 ##### Setup environment using python version 3.11.10 and download dependencies stated in requirements.txt
